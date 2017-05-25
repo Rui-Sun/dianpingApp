@@ -1,0 +1,33 @@
+.slick-dots li.slick-active button:before {
+  color: rgb(0,188,212);
+  opacity: 1
+}
+
+.slick-dots li button:before {
+  opacity: 0.2 
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+  padding-top: 4px;
+}
+
+.category-row {
+  display: flex;
+}
+
+.category-item {
+  width: auto;
+  height: auto;
+  flex: 1 1 0%;
+  text-align: center;
+}
+
+.category-item p {
+  margin: 0;
+  line-height: 0;
+  font-size: 0.6rem;
+  color: #777
+}
