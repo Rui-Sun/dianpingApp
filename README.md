@@ -13,5 +13,5 @@
 ### 产品界面：
 * 首页
 <br />
-<img src="./docs/imgs/first-page.jpg" alt="first-page-pic" style="width: 400px;"/>
+<img src="./docs/imgs/first-page.jpg" alt="first-page-pic" style="width: 200px;"/>
 
