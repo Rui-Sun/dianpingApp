@@ -6,11 +6,13 @@ export default class ListItem extends React.Component {
   componentDidMount() {
     let timeoutId = {};
     const callback = () => {
-      const rect = this.refs.loadMore.getBoundingClientRect();
-      const windowHeight = window.screen.availHeight;
-      if(rect.top && rect.top + rect.height -20 < windowHeight) {
-        this.loadMore();
-      }
+      if(this.refs.loadMore) {
+        const rect = this.refs.loadMore.getBoundingClientRect();
+        const windowHeight = window.screen.availHeight;
+        if(rect.top && rect.top + rect.height -20 < windowHeight) {
+          this.loadMore();
+        }
+      } 
     };
     window.addEventListener('scroll', () => {
       if(this.props.isLoadingMore) {

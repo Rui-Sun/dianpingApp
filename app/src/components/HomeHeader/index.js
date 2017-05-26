@@ -8,7 +8,7 @@ import Search from 'material-ui/svg-icons/action/search'
 import IconButton from 'material-ui/IconButton';
 import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
-import { Link } from 'react-router-dom'
+import history from '../../history';
 
 export default class HomeHeader extends React.Component {
   constructor() {
@@ -46,18 +46,21 @@ export default class HomeHeader extends React.Component {
     });
   };
 
+  handleClickCity() {
+    history.push('/city');
+  }
+
   render() {
     return(
       <div>
       <AppBar
         showMenuIconButton={false}
         title={
-          <Link to="/city">
-            <FlatButton style={{color: '#fff'}}>
+            <FlatButton style={{color: '#fff'}} onTouchTap={this.handleClickCity}>
               <span>{this.props.cityName}</span>
               <ArrowDown style={{verticalAlign: 'middle', color: '#fff'}}/>
             </FlatButton>
-          </Link>
+
         }
         iconElementRight={ 
           <div>     

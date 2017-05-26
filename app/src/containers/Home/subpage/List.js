@@ -16,7 +16,12 @@ export default class List extends React.Component {
     }
   }
 
+  componentWillUnMount(){
+    this.mounted = false;
+  }
+
   componentDidMount() {
+    this.mounted = true;
     const city = this.props.city;
     this.getListData(city, 0);
   }
@@ -28,7 +33,7 @@ export default class List extends React.Component {
     fetch('/api/list/' + encodeURIComponent(city) + '/' + page, fetchOption)
     .then(res => res.json())
     .then(json => {
-      if(json) {
+      if(json && this.mounted) {
         this.setState({
           listData: this.state.listData.concat(json.data),
           hasMore: json.hasMore
