@@ -12,5 +12,9 @@
 
 ### 产品界面：
 * 首页
-<br />
+
 <img src="./docs/imgs/first-page.jpg" alt="first-page-pic" width="400"/>
+
+* 选择城市页面
+
+<img src="./docs/imgs/city-page.png" alt="first-page-pic" width="400"/>
