@@ -1,0 +1,14 @@
+.city-title {
+  margin: 1.4rem 1.4rem 0.7rem;
+  font-size: 1.4rem;
+  color: rgb(0,188,212);
+}
+
+.current-city-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.2rem 0.4rem 0.1rem 0.4rem;
+  /*letter-spacing: 0.5rem;
+  text-align: center;*/
+  text-align: justify;
+}
